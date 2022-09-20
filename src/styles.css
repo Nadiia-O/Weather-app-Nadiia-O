@@ -1,0 +1,67 @@
+.app-card {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 25px;
+}
+
+.btn-search {
+  background-color: rgb(240, 246, 241);
+}
+
+.input-city-form {
+  width: 300px;
+  font-size: 13px;
+  padding: 6px 0 4px 10px;
+  border: 1px solid #cecece;
+  background: #f6f6f6;
+  border-radius: 8px;
+}
+.current-city-button {
+  width: 66.6px;
+  height: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  padding: 2px 0px 3px 0px;
+  border: 1px solid #000000;
+  background: #069717;
+  margin: -30px 0px 0px 251px;
+}
+.current-city-name {
+  font-size: 30px;
+  padding: 23px 7px 15px 5px;
+}
+.current-city-temperature {
+  font-size: 56px;
+  padding-top: 0px;
+  margin: 0px 0px 0px -59px;
+}
+.tempUnit {
+  position: relative;
+  top: -24px;
+  font-size: 20px;
+}
+.current-city-icon {
+  font-size: 30px;
+  margin: 19px 0 0 -59px;
+  color: grey;
+}
+.current-weather-details {
+  font-size: 20px;
+  margin: 13px 0px 0px -178px;
+  font-weight: lighter;
+}
+
+.current-data {
+  margin: -10px 0px 35px 5px;
+}
+.forecast {
+  padding: 0px;
+  margin: 0px;
+}
+.monday,
+.tuesday,
+.wednesday,
+.thursday,
+.friday {
+  text-align: center;
+}

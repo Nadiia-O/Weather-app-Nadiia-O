@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Reenie+Beanie&display=swap"
+      rel="stylesheet"
+    />
+     <script
+      src="https://kit.fontawesome.com/d2e0dec22f.js"
+      crossorigin="anonymous">
+     </script>
+     <link href="src/styles.css" rel="stylesheet" type="text/css" />
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+    <title>Weather</title>
+  </head>
+  <body>
+<div class="container">
+          <br/>
+          <br/>
+<div class="card app-card" style="width: 50rem;">
+<br/>
+
+   <form id="input-city-form">
+        <input type="text" id="input-city" placeholder="Enter your city">
+        <input type="submit" value="Search">
+   </form>
+   <button class="current-city-button">Current</button>
+
+    <div class="row current-city">
+<div class="col-3">
+    <p class="current-city-name" id="current-city">Kyiv</p>
+</div>
+
+<div class="col-3">
+    <p class="current-city-temperature">+<span id="current-temperature">17</span>
+       <span class="tempUnit">
+            <a href="#" id="celsius-link">°C</a>
+            |               
+            <a href="#" id="fahrenheit-link">°F</a>
+        </span>
+    </p> 
+</div>
+
+
+
+<div class="col-3 ">
+    <p class="current-city-icon"> 
+    <i class="fa-solid fa-cloud-rain"></i>
+   </p>
+</div>
+
+<div class="col-3">
+    <div class="current-weather-details">
+        Precipitation 83%
+<br/>
+        Wind 2 km/h
+    </div>
+</div>
+    </div>
+
+<p class="current-data" id="current-day">10 July Sunday 18:27</p>
+
+<div class="row forecast">
+
+     <div class="col">
+        <div class="card monday">
+        <div class="card-body">
+            <h5>Monday</h5>
+            <div>🌦</div>
+            <p>+20°</p>
+        </div>
+        </div>
+     </div>
+
+     <div class="col">
+        <div class="card tuesday">
+        <div class="card-body">
+            <h5>Tuesday</h5>
+            <div>⛈</div>
+            <p>+32°</p>
+        </div>
+        </div>
+    </div>
+
+     <div class="col">
+        <div class="card wednesday">
+        <div class="card-body">
+            <h5>Wednesday</h5>
+            <div>☁️</div>
+            <p>+25°</p>
+        </div>
+        </div>
+     </div> 
+
+     <div class="col">
+         <div class="card thursday">
+         <div class="card-body">
+             <h5>Thursday</h5>
+             <div>🌤</div>
+              <p>+30°</p>
+        </div>
+        </div>
+    </div>
+
+     <div class="col">
+        <div class="card friday">
+        <div class="card-body">
+             <h5>Friday</h5>
+             <div>☀️</div>
+             <p>+32°</p>
+        </div>
+        </div>
+     </div>
+</div>
+
+    </div>
+</div>
+ </div>
+ <script src="src/script.js"></script>
+  </body>
+</html>
