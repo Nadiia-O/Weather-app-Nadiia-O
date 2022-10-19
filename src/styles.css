@@ -11,7 +11,8 @@
 .input-city-form {
   width: 300px;
   font-size: 13px;
-  padding: 6px 0 4px 10px;
+  margin: 6px 0 4px 13px;
+  padding: 6px 0 4px 13px;
   border: 1px solid #cecece;
   background: #f6f6f6;
   border-radius: 8px;
@@ -28,31 +29,31 @@
 }
 .current-city-name {
   font-size: 30px;
-  padding: 23px 7px 15px 5px;
+  margin: 3px 7px 3px 13px;
 }
 .current-city-temperature {
-  font-size: 56px;
+  font-size: 45px;
   padding-top: 0px;
-  margin: 0px 0px 0px -59px;
+  margin: -5px 0px 0px 13px;
 }
 .tempUnit {
   position: relative;
   top: -24px;
-  font-size: 20px;
+  font-size: 15px;
 }
 .current-city-icon {
   font-size: 30px;
-  margin: 19px 0 0 -59px;
+  margin: -84px 0 0 155px;
   color: grey;
 }
 .current-weather-details {
   font-size: 20px;
-  margin: 13px 0px 0px -178px;
+  margin: -93px 0px 0px 210px;
   font-weight: lighter;
 }
 
 .current-data {
-  margin: -10px 0px 35px 5px;
+  margin: -4px 0px 0px 13px;
 }
 .forecast {
   padding: 0px;
