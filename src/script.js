@@ -1,21 +1,26 @@
-let now = new Date();
+function formatDate(timestamp) {
+  let now = new Date(timestamp);
+  let hours = now.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = now.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[now.getDay()];
 
-let today = document.querySelector("#current-day");
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[now.getDay()];
-
-let hours = now.getHours();
-let minutes = now.getMinutes();
-
-today.innerHTML = `${day} ${hours}:${minutes}`;
+  return `${day} ${hours}:${minutes}`;
+}
 
 let city = `Kyiv`;
 
@@ -47,6 +52,9 @@ function changeCity() {
 
     let currentHumidity = document.querySelector("#current-humidity");
     currentHumidity.innerHTML = response.data.main.humidity;
+
+    let currentDate = document.querySelector("#current-day");
+    currentDate.innerHTML = formatDate(response.data.dt * 1000);
 
     console.log(response.data);
   }
