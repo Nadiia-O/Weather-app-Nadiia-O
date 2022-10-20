@@ -30,15 +30,16 @@
 .current-city-name {
   font-size: 30px;
   margin: 3px 7px 3px 13px;
+  text-transform: capitalize;
 }
 .current-city-temperature {
   font-size: 45px;
   padding-top: 0px;
   margin: -5px 0px 0px 13px;
 }
-.tempUnit {
+.temp-unit {
   position: relative;
-  top: -24px;
+  top: -21px;
   font-size: 15px;
 }
 .current-city-icon {
@@ -56,8 +57,7 @@
   margin: -4px 0px 0px 13px;
 }
 .forecast {
-  padding: 0px;
-  margin: 0px;
+  margin: -1px -41px 10px -11px;
 }
 .monday,
 .tuesday,

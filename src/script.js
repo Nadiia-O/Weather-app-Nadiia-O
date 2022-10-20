@@ -36,11 +36,19 @@ function changeCity() {
   let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   function showTemperature(response) {
-    let temperatureNow = Math.round(response.data.main.temp);
     let city = response.data.name;
+    let temperatureNow = Math.round(response.data.main.temp);
     let message = `${temperatureNow}`;
     let newCity = document.querySelector("#current-temperature");
     newCity.innerHTML = message;
+
+    let currentWind = document.querySelector("#current-wind");
+    currentWind.innerHTML = Math.round(response.data.wind.speed);
+
+    let currentHumidity = document.querySelector("#current-humidity");
+    currentHumidity.innerHTML = response.data.main.humidity;
+
+    console.log(response.data);
   }
   axios.get(apiURL).then(showTemperature);
 }
