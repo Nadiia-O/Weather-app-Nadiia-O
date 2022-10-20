@@ -42,6 +42,14 @@
   top: -21px;
   font-size: 15px;
 }
+.celsius-link {
+  text-decoration: none;
+}
+.temp-unit .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
 .weather-pic {
   margin: -106px 0 0 112px;
 }

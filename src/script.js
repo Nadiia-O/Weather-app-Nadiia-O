@@ -47,6 +47,8 @@ function changeCity() {
     let newCity = document.querySelector("#current-temperature");
     newCity.innerHTML = message;
 
+    celsiusTemperature = response.data.main.temp;
+
     let currentWind = document.querySelector("#current-wind");
     currentWind.innerHTML = Math.round(response.data.wind.speed);
 
@@ -66,7 +68,32 @@ function changeCity() {
   }
   axios.get(apiURL).then(showTemperature);
 }
+changeCity("Kyiv");
+let celsiusTemperature = null;
+//convertor C to F
+function showFahrenheitTemp(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#current-temperature");
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemp);
 
+//convertor from F to C
+
+function showCelsiusTemp(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#current-temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showCelsiusTemp);
 //current button
 
 function currentPositionWeather() {
