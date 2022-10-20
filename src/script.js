@@ -56,6 +56,12 @@ function changeCity() {
     let currentDate = document.querySelector("#current-day");
     currentDate.innerHTML = formatDate(response.data.dt * 1000);
 
+    let currentIcon = document.querySelector("#weather-icon");
+    currentIcon.setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    );
+
     console.log(response.data);
   }
   axios.get(apiURL).then(showTemperature);
