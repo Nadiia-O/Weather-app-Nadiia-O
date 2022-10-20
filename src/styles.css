@@ -42,10 +42,8 @@
   top: -21px;
   font-size: 15px;
 }
-.current-city-icon {
-  font-size: 30px;
-  margin: -84px 0 0 155px;
-  color: grey;
+.weather-icon {
+  margin: -106px 0 0 131px;
 }
 .current-weather-details {
   font-size: 20px;
