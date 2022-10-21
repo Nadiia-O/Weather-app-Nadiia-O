@@ -104,6 +104,12 @@ function currentPositionWeather() {
 
     let currentGeoCityName = document.querySelector("#current-city");
     currentGeoCityName.innerHTML = response.data.name;
+
+    let currentHumidity = document.querySelector("#current-humidity");
+    currentHumidity.innerHTML = response.data.main.humidity;
+
+    let currentWind = document.querySelector("#current-wind");
+    currentWind.innerHTML = Math.round(response.data.wind.speed);
   }
 
   function currentPosition(position) {

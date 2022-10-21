@@ -42,9 +42,6 @@
   top: -21px;
   font-size: 15px;
 }
-.celsius-link {
-  text-decoration: none;
-}
 .temp-unit .active {
   color: black;
   cursor: default;
