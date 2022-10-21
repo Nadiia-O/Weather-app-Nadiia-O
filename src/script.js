@@ -36,7 +36,6 @@ function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
-  let days = ["Thu", "Fri", "Sun", "Mon", "Tue"];
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
       forecastHTML =
@@ -102,6 +101,9 @@ function changeCity() {
 
     let currentDate = document.querySelector("#current-day");
     currentDate.innerHTML = formatDate(response.data.dt * 1000);
+
+    let currentDescription = document.querySelector("#current-weather-word");
+    currentDescription.innerHTML = response.data.weather[0].description;
 
     let currentIcon = document.querySelector("#weather-icon");
     currentIcon.setAttribute(

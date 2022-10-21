@@ -32,6 +32,11 @@
   margin: 3px 7px 3px 13px;
   text-transform: capitalize;
 }
+.current-weather-description {
+  color: darkgray;
+  margin: 0px 0px 0px 13px;
+  text-transform: capitalize;
+}
 .current-city-temperature {
   font-size: 45px;
   padding-top: 0px;
